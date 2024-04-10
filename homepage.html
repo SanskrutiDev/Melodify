@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('m_music_player.gif'); /* Adjust the image path */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center; /* Center the background image both horizontally and vertically */
+            color: #fff;
+            min-height: 100vh; /* Ensure the body covers the full viewport height */
+            position: relative; /* Set body position to relative */
+        }
+        .navbar {
+            background-color: black;
+            width: 100%;
+            padding: 15px 20px;
+            position: fixed; /* Position the navbar absolutely */
+            top: 0; /* Place the navbar at the top */
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+        }
+        .buttons {
+            margin-right: 20px;
+        }
+        .login-btn,
+        .signin-btn {
+            padding: 10px 20px;
+            background-color: #1db954;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            margin-left: 10px;
+        }
+        .login-btn:hover,
+        .signin-btn:hover {
+            background-color: #169b40;
+        }
+        .footer {
+            background-color: black;
+            width: 100%;
+            height: 30px;
+            padding: 20px 0;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+        }
+        .footer h3 {
+            border-top: 2px solid #fff;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">Melodify</div>
+        <div class="buttons">
+            <a href="login.html" class="login-btn">Login</a>
+            <a href="signin.html" class="signin-btn">Signin</a>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>"If music be the food of love, play on."</h3>
+    </div>
+</body>
+</html>
